@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558126898554",
+    "project_id": "bloomjoy-73570",
+    "storage_bucket": "bloomjoy-73570.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558126898554:android:1e54a61e11495222828ac3",
+        "android_client_info": {
+          "package_name": "com.example.bloomjoy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp_9RRC51PACiEXPo1CYRvCx8P6b2f-RE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
