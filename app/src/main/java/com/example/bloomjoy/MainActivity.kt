@@ -19,8 +19,13 @@ import android.widget.Button
             insets
         }
         val loginButton = findViewById<Button>(R.id.hello)
+        val registerButton = findViewById<Button>(R.id.register)
         loginButton.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+        registerButton.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
     }
