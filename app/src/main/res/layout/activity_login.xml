@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/sign_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="top"
+    android:background="@drawable/pattern_bg"
     tools:context=".LoginActivity">
 
-    <EditText
-        android:id="@+id/loginEmail"
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints="Email"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077"
-        tools:ignore="LabelFor" />
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/logos" />
 
     <EditText
-        android:id="@+id/loginPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:autofillHints="Password"
-        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="362dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif"
+        android:hint="Mật khẩu"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginEmail"
-        app:layout_constraintVertical_bias="0.008"
-        tools:ignore="LabelFor" />
+        android:paddingHorizontal="16dp" />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
-        app:layout_constraintVertical_bias="0.051"
-        tools:ignore="HardcodedText" />
+        android:id="@+id/buttonSignIn"
+        android:layout_width="196dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_bg_pink"
+        android:fontFamily="sans-serif"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/SignUpNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.282" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Chưa có tài khoản? Đăng ký ngay" />
+
+
+</LinearLayout>

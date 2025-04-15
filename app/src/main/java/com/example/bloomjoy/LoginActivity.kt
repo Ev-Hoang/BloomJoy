@@ -2,7 +2,6 @@ package com.example.bloomjoy
 
 import android.util.Patterns;
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -35,10 +34,10 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        loginEmail = findViewById<EditText>(R.id.loginEmail)
-        loginPassword = findViewById<EditText>(R.id.loginPassword)
-        loginButton = findViewById<Button>(R.id.loginButton)
-        signupRedirectText = findViewById<TextView>(R.id.result)
+//        loginEmail = findViewById<EditText>(R.id.signup_email)
+//        loginPassword = findViewById<EditText>(R.id.signup_password)
+//        loginButton = findViewById<Button>(R.id.loginButton)
+//        signupRedirectText = findViewById<TextView>(R.id.result)
 
         auth = FirebaseAuth.getInstance()
 

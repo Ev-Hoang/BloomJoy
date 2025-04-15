@@ -36,10 +36,10 @@ class SignupActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        signupEmail = findViewById(R.id.signup_email)
-        signupPassword = findViewById(R.id.signup_password)
-        signupButton = findViewById(R.id.signup_button)
-        loginRedirectText = findViewById(R.id.loginRedirectText)
+//        signupEmail = findViewById(R.id.signup_email)
+//        signupPassword = findViewById(R.id.signup_password)
+//        signupButton = findViewById(R.id.signup_button)
+//        loginRedirectText = findViewById(R.id.loginRedirectText)
 
         signupButton.setOnClickListener {
             val user = signupEmail.text.toString().trim()

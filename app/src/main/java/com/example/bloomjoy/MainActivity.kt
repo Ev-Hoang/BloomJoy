@@ -18,15 +18,15 @@ import android.widget.Button
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val loginButton = findViewById<Button>(R.id.hello)
-        val registerButton = findViewById<Button>(R.id.register)
-        loginButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-        registerButton.setOnClickListener {
-            val intent = Intent(this, SignupActivity::class.java)
-            startActivity(intent)
-        }
+//        val loginButton = findViewById<Button>(R.id.hello)
+//        val registerButton = findViewById<Button>(R.id.register)
+//        loginButton.setOnClickListener {
+//            val intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+//        }
+//        registerButton.setOnClickListener {
+//            val intent = Intent(this, SignupActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }
