@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="pink">#FFB6C1</color>
+    <color name="pink_dark">#D85A8C</color>
+    <color name="green_light">#C8FACC</color>
+    <color name="green_dark">#2E7D32</color>
+    <color name="blue_light">#E0F7FA</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name="pink_primary">#FF69B4</color>
-    <color name="pink_light">#FFB6C1</color>
-
-    <color name="green_primary">#A8D5BA</color>
-    <color name="green_light">#E0F8E0</color>
-
-    <color name="background_light">#FFF0F5</color>
 </resources>

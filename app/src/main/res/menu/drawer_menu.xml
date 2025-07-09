@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/drawer_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+
+        <!-- Danh mục sản phẩm -->
+        <item
+            android:title="Danh mục sản phẩm">
+            <menu>
+                <item android:id="@+id/nav_hoa_tang" android:title="Hoa tặng" />
+                <item android:id="@+id/nav_hoa_nha" android:title="Hoa nhà" />
+                <item android:id="@+id/nav_hoa_cuoi" android:title="Hoa cưới" />
+                <item android:id="@+id/nav_lan_ho_diep" android:title="Lan Hồ Điệp" />
+                <item android:id="@+id/nav_khai_truong" android:title="Hoa khai trương" />
+                <item android:id="@+id/nav_chia_buon" android:title="Hoa chia buồn" />
+            </menu>
+        </item>
+
+        <!-- Tài khoản -->
+        <item android:id="@+id/nav_account" android:title="Tài khoản của bạn" />
+
+        <!-- Đăng nhập -->
+        <item android:id="@+id/nav_login" android:title="Đăng nhập" />
+
+    </group>
+</menu>
+

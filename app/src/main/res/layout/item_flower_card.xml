@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="@drawable/flower_card_bg"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_flower" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoa Hồng"
+        android:textColor="@color/green_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150.000đ"
+        android:textColor="@color/pink_dark"
+        android:textSize="13sp"
+        android:layout_marginBottom="4dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm vào giỏ hàng"
+        android:textSize="12sp"
+        android:textColor="@color/green_dark"
+        android:backgroundTint="@color/pink"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp" />
+</LinearLayout>

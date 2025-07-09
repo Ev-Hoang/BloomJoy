@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BloomJoy"
+rootProject.name = "BloomJoy4"
 include(":app")
+ 

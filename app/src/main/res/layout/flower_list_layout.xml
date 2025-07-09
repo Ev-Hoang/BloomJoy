@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_layout" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Tiêu đề -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hoa Tặng"
+                    android:textSize="24sp"
+                    android:textColor="@color/pink_dark"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Bộ lọc -->
+                <Spinner
+                    android:id="@+id/sortSpinner"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/spinner_bg"
+                    android:popupBackground="@color/white"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                <!-- Danh sách sản phẩm -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Mỗi hàng gồm 2 sản phẩm -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/item_flower_card" />
+                        <include layout="@layout/item_flower_card" />
+                    </LinearLayout>
+                    <!-- Lặp thêm nếu cần -->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+
+    <!-- Nút cuộn lên đầu -->
+    <ImageButton
+        android:id="@+id/scrollToTopButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_circle_bg"
+        android:src="@drawable/ic_arrow_up"
+        android:contentDescription="Lên đầu trang"
+        android:alpha="0.6"
+        android:elevation="6dp"
+        android:scaleType="centerInside"
+        app:tint="@color/green_dark" />
+</FrameLayout>

@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Bloomjoy</string>
+    <string name="app_name">BloomJoy</string>
+
+    <!-- Các tùy chọn sắp xếp cho Spinner -->
+    <string-array name="sort_options">
+        <item>Thứ tự theo giá: Thấp đến cao</item>
+        <item>Thứ tự theo giá: Cao đến thấp</item>
+    </string-array>
 </resources>
